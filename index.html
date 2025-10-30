@@ -6,89 +6,96 @@
   <title>Everton Grellert - Power BI Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background-color: #09090b; color: #fafafa; font-family: system-ui, sans-serif; }
-    a { transition: color 0.3s; }
+    body { background-color: #0a0a0a; color: #fafafa; font-family: 'Inter', sans-serif; }
   </style>
 </head>
 <body class="min-h-screen">
 
-  <!-- Header -->
-  <header class="fixed top-0 w-full bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800 z-50">
-    <nav class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">Everton Grellert</h1>
-      <div class="flex gap-6">
-        <a href="#sobre" class="hover:text-blue-400">Sobre</a>
-        <a href="#projetos" class="hover:text-blue-400">Projetos</a>
-        <a href="#contato" class="hover:text-blue-400">Contato</a>
+  <!-- Seção Principal -->
+  <section class="max-w-5xl mx-auto px-6 py-24 flex flex-col-reverse md:flex-row items-center gap-10">
+    <div class="flex-1">
+      <p class="text-zinc-400 mb-2">Olá! Meu nome é</p>
+      <h1 class="text-5xl font-bold mb-3">
+        <span class="text-emerald-500">Everton</span> Grellert
+      </h1>
+      <h2 class="text-xl text-zinc-300 mb-6">Analista de Dados | Especialista em Power BI</h2>
+      <p class="text-zinc-400 leading-relaxed mb-6">
+        Desde 2018, desenvolvo soluções de Business Intelligence, criando dashboards interativos e estratégias de análise de dados 
+        voltadas à tomada de decisão. Tenho paixão por transformar dados em histórias visuais e promover uma cultura 
+        <span class="italic text-emerald-400">data-driven</span> nas organizações.
+      </p>
+      <a href="#projetos" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2 rounded-lg font-medium transition-colors">
+        Ver projetos
+      </a>
+    </div>
+
+    <div class="flex-1 flex justify-center">
+      <img src="https://via.placeholder.com/250x250.png?text=Foto+Perfil" alt="Foto de Everton" class="w-64 h-64 rounded-full object-cover border-4 border-emerald-600 shadow-lg">
+    </div>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section id="sobre" class="bg-zinc-950 py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-xl font-semibold mb-4 border-l-4 border-emerald-500 pl-3">Sobre mim</h2>
+      <p class="text-zinc-400 mb-8">Conheça a minha trajetória:</p>
+
+      <div class="flex flex-col sm:flex-row items-start gap-8">
+        <div class="text-6xl font-extrabold text-emerald-500 leading-none">7+</div>
+        <p class="text-lg leading-relaxed text-zinc-300 max-w-3xl">
+          Anos de experiência profissional na área de dados, com foco em desenvolvimento de soluções de BI e modelagem de dados. 
+          <span class="font-semibold text-white">Atuo desde 2018 com Power BI</span>, criando dashboards interativos e estratégias de análise 
+          voltadas à tomada de decisão. Transformo dados em histórias visuais e promovo uma cultura 
+          <span class="italic text-emerald-400">data-driven</span> nas organizações.
+        </p>
       </div>
-    </nav>
-  </header>
-
-<section style="background-color: #000; color: #fff; padding: 40px 20px; font-family: 'Inter', sans-serif;">
-  <h2 style="border-left: 3px solid #4CAF50; padding-left: 10px; font-size: 1.3rem; margin-bottom: 20px;">
-    Sobre mim:
-  </h2>
-  <p style="margin-bottom: 25px;">
-    Seja muito bem-vindo(a) ao meu portfólio. Conheça a minha trajetória:
-  </p>
-
-  <div style="display: flex; align-items: flex-start; gap: 20px; max-width: 800px;">
-    <div style="font-size: 4rem; font-weight: 700; color: #4CAF50; line-height: 1;">
-      7+
     </div>
-    <div style="font-size: 1rem; line-height: 1.6;">
-      anos de experiência profissional na área de dados, com foco em desenvolvimento de soluções de BI e modelagem de dados. 
-      <strong>Atuo desde 2018 com Power BI</strong>, criando dashboards interativos e estratégias de análise de dados voltadas à tomada de decisão. 
-      Transformo dados em histórias visuais e promovo uma cultura data-driven nas organizações.
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="max-w-5xl mx-auto px-6 py-20">
+    <h2 class="text-xl font-semibold mb-10 border-l-4 border-emerald-500 pl-3">Principais habilidades</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl hover:border-emerald-600 transition-all">
+        <h3 class="text-emerald-400 font-semibold text-lg mb-2">Visualização de Dados</h3>
+        <p class="text-zinc-400 text-sm leading-relaxed">Criação de dashboards interativos com foco em usabilidade, clareza e impacto visual.</p>
+      </div>
+      <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl hover:border-emerald-600 transition-all">
+        <h3 class="text-emerald-400 font-semibold text-lg mb-2">Modelagem & DAX</h3>
+        <p class="text-zinc-400 text-sm leading-relaxed">Construção de modelos de dados eficientes e medidas DAX otimizadas para análises dinâmicas.</p>
+      </div>
+      <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl hover:border-emerald-600 transition-all">
+        <h3 class="text-emerald-400 font-semibold text-lg mb-2">ETL & Power Query</h3>
+        <p class="text-zinc-400 text-sm leading-relaxed">Tratamento e integração de dados de múltiplas fontes utilizando boas práticas de ETL.</p>
+      </div>
     </div>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- Projetos -->
-  <section id="projetos" class="max-w-5xl mx-auto px-6 pb-24">
-    <h3 class="text-2xl font-semibold mb-8">Projetos</h3>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Card de exemplo -->
-      <div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition-transform">
-        <img src="https://via.placeholder.com/400x220.png?text=Dashboard+Vendas" alt="Dashboard de Vendas" class="w-full h-44 object-cover">
-        <div class="p-4">
-          <h4 class="text-lg font-semibold mb-2">Dashboard de Vendas</h4>
-          <p class="text-sm text-zinc-400 mb-4">Análise completa de desempenho comercial com segmentações por produto, região e vendedor.</p>
-          <a href="#" class="block w-full text-center bg-blue-600 hover:bg-blue-500 text-white py-2 rounded-xl">Ver projeto</a>
+  <section id="projetos" class="bg-zinc-950 py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-xl font-semibold mb-10 border-l-4 border-emerald-500 pl-3">Projetos</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card -->
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition-transform">
+          <img src="https://via.placeholder.com/400x220.png?text=Dashboard+Vendas" alt="Dashboard de Vendas" class="w-full h-44 object-cover">
+          <div class="p-4">
+            <h4 class="text-lg font-semibold mb-2">Dashboard de Vendas</h4>
+            <p class="text-sm text-zinc-400 mb-4">Análise de desempenho comercial com filtros por produto, região e vendedor.</p>
+            <a href="#" class="block w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white py-2 rounded-xl">Ver projeto</a>
+          </div>
         </div>
       </div>
-
-      <div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition-transform">
-        <img src="https://via.placeholder.com/400x220.png?text=Dashboard+Financeiro" alt="Dashboard Financeiro" class="w-full h-44 object-cover">
-        <div class="p-4">
-          <h4 class="text-lg font-semibold mb-2">Financeiro - Receitas e Despesas</h4>
-          <p class="text-sm text-zinc-400 mb-4">Dashboard para controle financeiro com KPIs de fluxo de caixa e comparação mensal.</p>
-          <a href="#" class="block w-full text-center bg-blue-600 hover:bg-blue-500 text-white py-2 rounded-xl">Ver projeto</a>
-        </div>
-      </div>
-
-      <div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:scale-105 transition-transform">
-        <img src="https://via.placeholder.com/400x220.png?text=Dashboard+RH" alt="Dashboard RH" class="w-full h-44 object-cover">
-        <div class="p-4">
-          <h4 class="text-lg font-semibold mb-2">Análise de RH</h4>
-          <p class="text-sm text-zinc-400 mb-4">Visualização de dados de turnover, absenteísmo e distribuição de cargos na empresa.</p>
-          <a href="#" class="block w-full text-center bg-blue-600 hover:bg-blue-500 text-white py-2 rounded-xl">Ver projeto</a>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="bg-zinc-900 py-16 text-center">
+  <section id="contato" class="py-16 text-center">
     <h3 class="text-2xl font-semibold mb-4">Entre em contato</h3>
-    <p class="text-zinc-400 mb-6">Ficarei feliz em conectar e conversar sobre dados, BI e Power BI.</p>
+    <p class="text-zinc-400 mb-6">Ficarei feliz em conversar sobre dados, BI e Power BI.</p>
     <div class="flex justify-center gap-6">
-      <a href="https://www.linkedin.com/in/everton-grellert/" target="_blank" class="hover:text-blue-400">LinkedIn</a>
-      <a href="https://github.com/everton-grellert" target="_blank" class="hover:text-blue-400">GitHub</a>
+      <a href="https://www.linkedin.com/in/everton-grellert/" target="_blank" class="hover:text-emerald-400">LinkedIn</a>
+      <a href="https://github.com/everton-grellert" target="_blank" class="hover:text-emerald-400">GitHub</a>
     </div>
   </section>
 
